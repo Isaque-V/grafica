@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+        <link rel="stylesheet" href="./Style/style.css">
+    <title>Finalizar Compra</title>
+</head>
+<body>
+    <div class="checkout">
+
+        <div class="form-group">
+    <label>Gmail</label>
+    <input type="email" id="email">
+</div>
+
+<div class="form-group">
+    <label>Telefone</label>
+    <input type="text" id="telefone">
+</div>
+
+<div class="form-group">
+    <label>CEP</label>
+    <input type="text" id="cep">
+</div>
+
+<div class="form-group">
+    <label>Endereço</label>
+    <input type="text" id="endereco">
+</div>
+
+<div class="form-group">
+    <label>Número</label>
+    <input type="number" id="numero">
+</div>
+
+<div class="form-group">
+    <label>Método de pagamento</label>
+    <select id="pagamento">
+        <option>Pix</option>
+        <option>Cartão</option>
+        <option>Boleto</option>
+    </select>
+</div>
+
+<button class="btn-comprar" onclick="comprar()">
+    COMPRAR
+</button>
+
+</div>
+</body>
+</html>

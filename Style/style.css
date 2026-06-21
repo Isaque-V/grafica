@@ -1,0 +1,119 @@
+
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+body{
+    background-color: #d8d8d8;
+  
+}
+
+
+
+.produtos{
+
+    background-color: #d7bfd3;
+}
+
+
+.header{
+    background-color: #a45ba7;
+    text-align: center;
+    padding: 20px;
+}
+
+.header h1{
+    font-size: 60px;
+    font-family: Georgia, serif;
+}
+
+
+.area-produto{
+    display: flex;
+    justify-content: center;
+    margin-top: 180px;
+}
+
+
+
+.card h2{
+    color: #b14f92;
+    margin-bottom: 5px;
+}
+
+.card img{
+    width: 300px;
+    display: block;
+}
+
+.info-produto{
+    background-color: #cfcfe8;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+.info-produto button{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.info-produto button:hover{
+    color: #a45ba7;
+}
+
+.checkout{
+  
+    background-color: #d7d4ef;
+    padding: 120px 80px;
+}
+
+.form-group{
+    margin-bottom: 25px;
+}
+
+label{
+    display: block;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+input,
+select{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #888;
+    font-size: 16px;
+}
+
+.duplo{
+    display: flex;
+    gap: 20px;
+}
+
+.duplo .form-group{
+    flex: 1;
+}
+
+/* Botão */
+.btn-comprar{
+    background-color: #ff008c;
+    color: black;
+    border: none;
+    padding: 15px 40px;
+    font-size: 18px;
+    cursor: pointer;
+    float: right;
+    margin-top: 80px;
+}
+
+.btn-comprar:hover{
+    opacity: 0.8;
+}

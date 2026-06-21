@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZaqueGraphic</title>
+    <link rel="stylesheet" href="./Style/style.css">
+</head>
+<body>
+<div class="container">
+
+    <div class="produtos">
+
+        <div class="header">
+            <h1>ZaqueGraphic</h1>
+        </div>
+
+        <div class="area-produto">
+
+            <div class="card">
+
+                <h2>placa de acrílico</h2>
+
+                <img src="./imagens/Sem título-1.jpg">
+
+                <a href="./comprar.html" class="info-produto">
+                    <span > Comprar     </span>
+
+                    <span href="./comprar.html">R$ 59,90</span>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<script>
+async function comprar() {
+
+    const dados = {
+        email: document.getElementById("email").value,
+        telefone: document.getElementById("telefone").value,
+        cep: document.getElementById("cep").value,
+        endereco: document.getElementById("endereco").value,
+        numero: document.getElementById("numero").value,
+        pagamento: document.getElementById("pagamento").value
+    };
+
+    const resposta = await fetch(
+        "http://localhost:3001/comprar",
+        {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(dados)
+        }
+    );
+
+    const resultado = await resposta.json();
+
+    alert(resultado.mensagem);
+}
+</script>
+</body>
+</html>

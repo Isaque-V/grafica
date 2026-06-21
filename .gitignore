@@ -1,0 +1,9 @@
+node_modules/
+aplays.db
+
+# Arquivos temporários
+*.log
+
+# Configurações do sistema
+.DS_Store
+Thumbs.db
